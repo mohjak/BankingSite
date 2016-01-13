@@ -1,0 +1,9 @@
+﻿@model BankingSite.Models.LoanApplication
+
+@{
+    ViewBag.Title = "Loan Application";
+}
+
+<h2 id="declineMessage">Sorry @Model.FirstName - We are unable to offer you a loan at this time.</h2>
+
+<p>If you feel you may be able to provide further details to support your application, please ring us quoting reference number: @Model.ID</p>

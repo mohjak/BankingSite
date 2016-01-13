@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Loan Application Status Search";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (@Html.BeginForm("ApplicationStatus", "LoanApplicationSearch", FormMethod.Get))
+{
+    <div class="input-group">
+        <input type="search" name="applicationId" class="form-control" placeholder="reference number" />
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+}

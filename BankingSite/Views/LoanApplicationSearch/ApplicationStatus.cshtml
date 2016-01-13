@@ -1,0 +1,19 @@
+﻿@model BankingSite.Models.LoanApplication
+
+@{
+    ViewBag.Title = "Loan Application Status";    
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3 id="firstName">@Model.FirstName</h3>
+
+<h3 id="status">
+    @if (Model.IsAccepted){
+        <span id="acceptedMessage">Yay! Accepted!</span>
+    }
+    else
+    {
+        <span id="declinedMessage">Sorry. Declined.</span>
+    }
+</h3>

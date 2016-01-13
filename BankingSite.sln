@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSite", "BankingSite\BankingSite.csproj", "{9FDF1EA9-5F3F-4A0F-8AC5-D8BC5E9468DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5970680F-3A23-429C-8121-10A5B545FDAF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSite.UnitTests", "BankingSite.UnitTests\BankingSite.UnitTests.csproj", "{FA8A8DAA-3235-4D99-80BF-F0AE73BB3613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSite.IntegrationTests", "BankingSite.IntegrationTests\BankingSite.IntegrationTests.csproj", "{6D12EEF0-43A5-4C1B-93D9-4A93C5FF9CCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FDF1EA9-5F3F-4A0F-8AC5-D8BC5E9468DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDF1EA9-5F3F-4A0F-8AC5-D8BC5E9468DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDF1EA9-5F3F-4A0F-8AC5-D8BC5E9468DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDF1EA9-5F3F-4A0F-8AC5-D8BC5E9468DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8A8DAA-3235-4D99-80BF-F0AE73BB3613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8A8DAA-3235-4D99-80BF-F0AE73BB3613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8A8DAA-3235-4D99-80BF-F0AE73BB3613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8A8DAA-3235-4D99-80BF-F0AE73BB3613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D12EEF0-43A5-4C1B-93D9-4A93C5FF9CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D12EEF0-43A5-4C1B-93D9-4A93C5FF9CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D12EEF0-43A5-4C1B-93D9-4A93C5FF9CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D12EEF0-43A5-4C1B-93D9-4A93C5FF9CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

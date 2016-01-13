@@ -1,0 +1,46 @@
+﻿@model BankingSite.Models.LoanApplication
+
+@{
+    ViewBag.Title = "Loan Application";
+}
+
+<h2 id="acceptMessage">Congratulations @Model.FirstName - Your application was accepted!</h2>
+
+<h3>Your reference number is: @Model.ID</h3>
+<div>
+    <h4>Loan Application Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.AnnualIncome)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.AnnualIncome)
+        </dd>
+    </dl>
+</div>

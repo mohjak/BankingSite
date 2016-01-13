@@ -1,0 +1,30 @@
+﻿@model BankingSite.Models.InterestRates
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Low rate loan!</h1>
+    <p class="lead" id="mainMessage">@ViewBag.Message</p>
+    <p>Current loan rate: <span id="loanRate">@Model.LoanRate</span> %</p>
+    <p><a href="@Url.Action("Apply", "LoanApplication")" class="btn btn-primary btn-lg">Apply Now ! &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Tempor illum</h2>
+        <p>Illum amet dolore sadipscing amet magna consectetuer diam nisl. Adipiscing diam aliquyam ad est ut eleifend eu dolores commodo diam clita est accusam id. </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Eirmod stet dignissim</h2>
+        <p>Dolore stet stet duis lorem accumsan invidunt assum ut in duo wisi diam. Et vulputate invidunt dolore facilisis accusam in dolore clita dolore at in clita consectetuer.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Et facilisis</h2>
+        <p>Et volutpat aliquip consetetur magna ut consectetuer accusam aliquip ipsum. In consetetur justo diam at aliquyam duis erat dolor praesent.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
