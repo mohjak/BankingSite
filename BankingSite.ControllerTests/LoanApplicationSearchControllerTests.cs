@@ -37,7 +37,7 @@ namespace BankingSite.ControllerTests
 
 			sut.WithCallTo(x => x.ApplicationStatus(99))
 				.ShouldRenderDefaultView()
-				.WithModel<LoanApplication>(x => x.FirstName = "Larry");
+				.WithModel<LoanApplication>(x => x.FirstName == "Larry");
 		}
 	}
 }
