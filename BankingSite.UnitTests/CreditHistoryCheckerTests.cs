@@ -21,7 +21,7 @@ namespace BankingSite.UnitTests
 		{
 			var sut = new CreditHistoryChecker();
 
-			var isCreditWorthy = sut.CheckCreditHistory("Tom", "Smith");
+			var isCreditWorthy = sut.CheckCreditHistory("Gentry", "Smith");
 
 			Assert.That(isCreditWorthy, Is.True);
 		}
