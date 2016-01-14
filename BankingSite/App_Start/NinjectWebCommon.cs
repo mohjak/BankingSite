@@ -1,6 +1,3 @@
-using BankingSite.Controllers;
-using BankingSite.Models;
-
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(BankingSite.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(BankingSite.App_Start.NinjectWebCommon), "Stop")]
 
@@ -64,9 +61,6 @@ namespace BankingSite.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IRepository>().To<Repository>();
-            kernel.Bind<ICreditHistoryChecker>().To<CreditHistoryChecker>();
-            kernel.Bind<ILoanApplicationScorer>().To<LoanApplicationScorer>();
         }        
     }
 }
