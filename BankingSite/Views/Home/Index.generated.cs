@@ -11,131 +11,131 @@
 
 namespace BankingSite.Views.Home
 {
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-    using System.Net;
-    using System.Text;
-    using System.Web;
-    using System.Web.Helpers;
-    using System.Web.Mvc;
-    using System.Web.Mvc.Ajax;
-    using System.Web.Mvc.Html;
-    using System.Web.Optimization;
-    using System.Web.Routing;
-    using System.Web.Security;
-    using System.Web.UI;
-    using System.Web.WebPages;
-    using BankingSite;
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
-    [System.Web.WebPages.PageVirtualPathAttribute("~/Views/Home/Index.cshtml")]
-    public partial class Index : System.Web.Mvc.WebViewPage<BankingSite.Models.InterestRates>
-    {
-        public Index()
-        {
-        }
-        public override void Execute()
-        {
-            
-            #line 3 "..\..\Views\Home\Index.cshtml"
-  
-    ViewBag.Title = "Home Page";
+	using System;
+	using System.Collections.Generic;
+	using System.IO;
+	using System.Linq;
+	using System.Net;
+	using System.Text;
+	using System.Web;
+	using System.Web.Helpers;
+	using System.Web.Mvc;
+	using System.Web.Mvc.Ajax;
+	using System.Web.Mvc.Html;
+	using System.Web.Optimization;
+	using System.Web.Routing;
+	using System.Web.Security;
+	using System.Web.UI;
+	using System.Web.WebPages;
+	using BankingSite;
 
-            
-            #line default
-            #line hidden
-WriteLiteral("\r\n\r\n<div");
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
+	[System.Web.WebPages.PageVirtualPathAttribute("~/Views/Home/Index.cshtml")]
+	public partial class Index : System.Web.Mvc.WebViewPage<BankingSite.Models.InterestRates>
+	{
+		public Index()
+		{
+		}
+		public override void Execute()
+		{
 
-WriteLiteral(" class=\"jumbotron\"");
+#line 3 "..\..\Views\Home\Index.cshtml"
 
-WriteLiteral(">\r\n    <h1>Low rate loan!</h1>\r\n    <p");
+			ViewBag.Title = "Home Page";
 
-WriteLiteral(" class=\"lead\"");
 
-WriteLiteral(" id=\"mainMessage\"");
+#line default
+#line hidden
+			WriteLiteral("\r\n\r\n<div");
 
-WriteLiteral(">");
+			WriteLiteral(" class=\"jumbotron\"");
 
-            
-            #line 9 "..\..\Views\Home\Index.cshtml"
-                                Write(ViewBag.Message);
+			WriteLiteral(">\r\n    <h1>Low rate loan!</h1>\r\n    <p");
 
-            
-            #line default
-            #line hidden
-WriteLiteral("</p>\r\n    <p>Current loan rate: <span");
+			WriteLiteral(" class=\"lead\"");
 
-WriteLiteral(" id=\"loanRate\"");
+			WriteLiteral(" id=\"mainMessage\"");
 
-WriteLiteral(">");
+			WriteLiteral(">");
 
-            
-            #line 10 "..\..\Views\Home\Index.cshtml"
-                                         Write(Model.LoanRate);
 
-            
-            #line default
-            #line hidden
-WriteLiteral("</span> %</p>\r\n    <p><a");
+#line 9 "..\..\Views\Home\Index.cshtml"
+			Write(ViewBag.Message);
 
-WriteAttribute("href", Tuple.Create(" href=\"", 284), Tuple.Create("\"", 330)
-            
-            #line 11 "..\..\Views\Home\Index.cshtml"
+
+#line default
+#line hidden
+			WriteLiteral("</p>\r\n    <p>Current loan rate: <span");
+
+			WriteLiteral(" id=\"loanRate\"");
+
+			WriteLiteral(">");
+
+
+#line 10 "..\..\Views\Home\Index.cshtml"
+			Write(Model.LoanRate);
+
+
+#line default
+#line hidden
+			WriteLiteral("</span> %</p>\r\n    <p><a");
+
+			WriteAttribute("href", Tuple.Create(" href=\"", 284), Tuple.Create("\"", 330)
+
+#line 11 "..\..\Views\Home\Index.cshtml"
 , Tuple.Create(Tuple.Create("", 291), Tuple.Create<System.Object, System.Int32>(Url.Action("Apply", "LoanApplication")
-            
-            #line default
-            #line hidden
+
+#line default
+#line hidden
 , 291), false)
-);
+			);
 
-WriteLiteral(" class=\"btn btn-primary btn-lg\"");
+			WriteLiteral(" class=\"btn btn-primary btn-lg\"");
 
-WriteLiteral(">Apply Now ! &raquo;</a></p>\r\n</div>\r\n\r\n<div");
+			WriteLiteral(">Apply Now ! &raquo;</a></p>\r\n</div>\r\n\r\n<div");
 
-WriteLiteral(" class=\"row\"");
+			WriteLiteral(" class=\"row\"");
 
-WriteLiteral(">\r\n    <div");
+			WriteLiteral(">\r\n    <div");
 
-WriteLiteral(" class=\"col-md-4\"");
+			WriteLiteral(" class=\"col-md-4\"");
 
-WriteLiteral(">\r\n        <h2>Tempor illum</h2>\r\n        <p>Illum amet dolore sadipscing amet ma" +
-"gna consectetuer diam nisl. Adipiscing diam aliquyam ad est ut eleifend eu dolor" +
-"es commodo diam clita est accusam id. </p>\r\n        <p><a");
+			WriteLiteral(">\r\n        <h2>Tempor illum</h2>\r\n        <p>Illum amet dolore sadipscing amet ma" +
+			"gna consectetuer diam nisl. Adipiscing diam aliquyam ad est ut eleifend eu dolor" +
+			"es commodo diam clita est accusam id. </p>\r\n        <p><a");
 
-WriteLiteral(" class=\"btn btn-default\"");
+			WriteLiteral(" class=\"btn btn-default\"");
 
-WriteLiteral(" href=\"\"");
+			WriteLiteral(" href=\"\"");
 
-WriteLiteral(">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div");
+			WriteLiteral(">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div");
 
-WriteLiteral(" class=\"col-md-4\"");
+			WriteLiteral(" class=\"col-md-4\"");
 
-WriteLiteral(">\r\n        <h2>Eirmod stet dignissim</h2>\r\n        <p>Dolore stet stet duis lorem" +
-" accumsan invidunt assum ut in duo wisi diam. Et vulputate invidunt dolore facil" +
-"isis accusam in dolore clita dolore at in clita consectetuer.</p>\r\n        <p><a" +
-"");
+			WriteLiteral(">\r\n        <h2>Eirmod stet dignissim</h2>\r\n        <p>Dolore stet stet duis lorem" +
+			" accumsan invidunt assum ut in duo wisi diam. Et vulputate invidunt dolore facil" +
+			"isis accusam in dolore clita dolore at in clita consectetuer.</p>\r\n        <p><a" +
+			"");
 
-WriteLiteral(" class=\"btn btn-default\"");
+			WriteLiteral(" class=\"btn btn-default\"");
 
-WriteLiteral(" href=\"http://go.microsoft.com/fwlink/?LinkId=301866\"");
+			WriteLiteral(" href=\"http://go.microsoft.com/fwlink/?LinkId=301866\"");
 
-WriteLiteral(">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div");
+			WriteLiteral(">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div");
 
-WriteLiteral(" class=\"col-md-4\"");
+			WriteLiteral(" class=\"col-md-4\"");
 
-WriteLiteral(">\r\n        <h2>Et facilisis</h2>\r\n        <p>Et volutpat aliquip consetetur magna" +
-" ut consectetuer accusam aliquip ipsum. In consetetur justo diam at aliquyam dui" +
-"s erat dolor praesent.</p>\r\n        <p><a");
+			WriteLiteral(">\r\n        <h2>Et facilisis</h2>\r\n        <p>Et volutpat aliquip consetetur magna" +
+			" ut consectetuer accusam aliquip ipsum. In consetetur justo diam at aliquyam dui" +
+			"s erat dolor praesent.</p>\r\n        <p><a");
 
-WriteLiteral(" class=\"btn btn-default\"");
+			WriteLiteral(" class=\"btn btn-default\"");
 
-WriteLiteral(" href=\"http://go.microsoft.com/fwlink/?LinkId=301867\"");
+			WriteLiteral(" href=\"http://go.microsoft.com/fwlink/?LinkId=301867\"");
 
-WriteLiteral(">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>");
+			WriteLiteral(">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>");
 
-        }
-    }
+		}
+	}
 }
 #pragma warning restore 1591
