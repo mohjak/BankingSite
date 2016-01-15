@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HomeIndexViewTests.cs" />
+    <Compile Include="LoanApplicationAcceptedViewTests.cs" />
     <Compile Include="LoanApplicationSearchApplicationSatusViewTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
