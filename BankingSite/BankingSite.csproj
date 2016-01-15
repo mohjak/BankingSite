@@ -171,6 +171,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Bankingsite.mdf" />
+    <Content Include="App_Data\Bankingsite_log.ldf">
+      <DependentUpon>Bankingsite.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -237,9 +241,7 @@
     <Content Include="Views\LoanApplicationSearch\Index.cshtml" />
     <Content Include="Scripts\jquery-2.2.0.min.map" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
