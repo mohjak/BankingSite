@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using TestStack.Seleno.PageObjects;
 
-namespace BankingSite.FunctionalUITests.PageObjectModel
+namespace BankingSite.FunctionalUITests.PageObjectModels
 {
 	class AcceptedPage : Page
 	{

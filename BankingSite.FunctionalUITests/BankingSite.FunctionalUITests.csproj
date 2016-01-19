@@ -92,7 +92,7 @@
     <Compile Include="DemoHelperCode\DemoHelper.cs" />
     <Compile Include="LoanApplicationTests.cs" />
     <Compile Include="PageObjectModels\AcceptedPage.cs" />
-    <Compile Include="PageObjectModels\DeclinedPage.cs" />
+    <Compile Include="PageObjectModels\DeclinePage.cs" />
     <Compile Include="PageObjectModels\LoanApplicationPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestFixtureLifecycle.cs" />

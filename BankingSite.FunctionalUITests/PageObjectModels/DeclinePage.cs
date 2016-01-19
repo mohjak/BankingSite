@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using TestStack.Seleno.PageObjects;
 
-namespace BankingSite.FunctionalUITests.PageObjectModel
+namespace BankingSite.FunctionalUITests.PageObjectModels
 {
-	class DeclinePage : Page
+	class DeclinedPage : Page
 	{
-		public string DeclineMessage
+		public string DeclinedMessage
 		{
 			get
 			{
