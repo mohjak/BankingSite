@@ -9,7 +9,7 @@ namespace BankingSite.FunctionalUITests
 
         static BrowserHost()
         {
-            Instance.Run("BankingSite", 5658, config => config.WithRouteConfig(RouteConfig.RegisterRoutes));
+            Instance.Run("BankingSite", 4223, config => config.WithRouteConfig(RouteConfig.RegisterRoutes));
 
             RootUrl = Instance.Application.Browser.Url;
         }
