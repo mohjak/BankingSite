@@ -1,56 +1,61 @@
 ﻿using BankingSite.Controllers;
 using BankingSite.FunctionalUITests.DemoHelperCode;
 using BankingSite.FunctionalUITests.PageObjectModels;
+using BankingSite.Models;
 using NUnit.Framework;
 using TestStack.Seleno.PageObjects.Locators;
 
 namespace BankingSite.FunctionalUITests
 {
-    [TestFixture]
-    public class LoanApplicationTests
-    {
-        [Test]
-        public void ShouldAcceptLoanApplication()
-        {
-            var applyPage =
-                BrowserHost.Instance.NavigateToInitialPage<LoanApplicationController, LoanApplicationPage>(
-                    x => x.Apply());
+	[TestFixture]
+	public class LoanApplicationTests
+	{
+		[Test]
+		public void ShouldAcceptLoanApplication()
+		{
+			var applyPage =
+				 BrowserHost.Instance.NavigateToInitialPage<LoanApplicationController, LoanApplicationPage>(
+					  x => x.Apply());
 
-            var acceptPage = applyPage.EnterFirstName("Gentry")
-                .EnterLastName("Smith")
-                .EnterAge("42")
-                .EnterAnnualIncome("99999999")
-                .SubmitApplication<AcceptedPage>();
+			var applicationDetails = new LoanApplication
+			{
+				FirstName = "Gentry",
+				LastName = "Smith",
+				Age = 42,
+				AnnualIncome = 999999999
+			};
 
-            // Should now be on application accepted page
+			var acceptPage = applyPage.SubmitApplication<AcceptedPage>(applicationDetails);
 
-            DemoHelper.Wait(5000);
+			var acceptMessageText = acceptPage.AcceptedMessage;
 
-            var acceptMessageText = acceptPage.AcceptedMessage;
+			Assert.That(acceptMessageText, Is.EqualTo("Congratulations Gentry - Your application was accepted!"));
 
-            Assert.That(acceptMessageText, Is.EqualTo("Congratulations Gentry - Your application was accepted!"));
-
-            DemoHelper.Wait(5000);
-        }
+			DemoHelper.Wait(5000);
+		}
 
 
-        [Test]
-        public void ShouldDeclineLoanApplication()
-        {
-            var applyPage =
-                BrowserHost.Instance.NavigateToInitialPage<LoanApplicationController, LoanApplicationPage>(
-                    x => x.Apply());
+		[Test]
+		public void ShouldDeclineLoanApplication()
+		{
+			var applyPage =
+				 BrowserHost.Instance.NavigateToInitialPage<LoanApplicationController, LoanApplicationPage>(
+					  x => x.Apply());
 
-            var declinePage = applyPage.EnterFirstName("Gentry")
-                .EnterLastName("Smith")
-                .EnterAge("16")
-                .EnterAnnualIncome("20000")
-                .SubmitApplication<DeclinedPage>();
+			var applicationDetails = new LoanApplication
+			{
+				FirstName = "Gentry",
+				LastName = "Smith",
+				Age = 16,
+				AnnualIncome = 20000
+			};
 
-            Assert.That(declinePage.DeclinedMessage, Is.EqualTo("Sorry Gentry - We are unable to offer you a loan at this time."));
-            
-            DemoHelper.Wait(5000);
-        }
+			var declinePage = applyPage.SubmitApplication<DeclinedPage>(applicationDetails);
 
-    }
+			Assert.That(declinePage.DeclinedMessage, Is.EqualTo("Sorry Gentry - We are unable to offer you a loan at this time."));
+
+			DemoHelper.Wait(5000);
+		}
+
+	}
 }
