@@ -7,30 +7,6 @@ namespace BankingSite.UnitTests
 	[TestFixture]
 	public class LoanApplicationScorerTests
 	{
-		// Here the test "unit" includes a real CreditHistoryChecker collaborator
-
-		[Test]
-		public void ShouldDeclineWhenNotTooYoungAndWealthyButPoorCredit_Classical()
-		{
-			var sut = new LoanApplicationScorer(new CreditHistoryChecker());
-
-			var application = new LoanApplication
-			{
-				// Need to specify criteria that will cause
-				// real CreditHistoryChecker to decline
-				FirstName = "Sarah",
-				LastName = "Smith",
-
-				AnnualIncome = 1000000.01m,
-				Age = 22
-		
-			};
-
-			sut.ScoreApplication(application);
-
-			Assert.That(application.IsAccepted, Is.False);
-		}
-
 		// Here the test uses a fake CreditHistoryChecker collaborator
 		
 		[Test]
