@@ -3,7 +3,7 @@ using HtmlAgilityPack;
 using NUnit.Framework;
 using RazorGenerator.Testing;
 
-namespace BankingSite.ViewTests
+namespace BankingSite.ViewTests   
 {
 	[TestFixture]
 	public class HomeIndexViewTests
